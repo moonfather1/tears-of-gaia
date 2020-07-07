@@ -1,0 +1,35 @@
+item.tearsofgaia.gem_water.name=Tear of Gaia
+item.tearsofgaia.gem_air.name=Tear of Gaia
+item.tearsofgaia.gem_earth.name=Tear of Gaia
+item.tearsofgaia.gem_fire.name=Tear of Gaia
+
+item.tearsofgaia.gem_water.subtitle=Element: water
+item.tearsofgaia.gem_air.subtitle=Element: air
+item.tearsofgaia.gem_earth.subtitle=Element: earth
+item.tearsofgaia.gem_fire.subtitle=Element: fire
+
+item.tearsofgaia.gem_all.subtitle2=You might be able to forge its essence into your tool.
+
+item.tearsofgaia.gem_water.usage_1=Fully repairs damaged items and removes curses. Items imbued with this tear do not expire in world.
+item.tearsofgaia.gem_fire.usage_1=Items imbued with this tear do not expire in world and will not be destroyed by fire or lava. If dropped into lava, they will float until player picks them up.
+item.tearsofgaia.gem_air.usage_1=Items imbued with this tear do not expire in world and will not fall into void. If dropped above void, they will float until player picks them up.
+item.tearsofgaia.gem_earth.usage_1=Increases the level of unbreaking enchantment. Items imbued with this tear do not expire in world.
+
+tearsofgaia.config.title = Gaia's tears - configuration
+
+item.tearsofgaia.gem_water_2.name=Tear of Gaia
+item.tearsofgaia.gem_air_2.name=Tear of Gaia
+item.tearsofgaia.gem_earth_2.name=Tear of Gaia
+item.tearsofgaia.gem_fire_2.name=Tear of Gaia
+item.tearsofgaia.level_suffix=%s (level %d)
+
+item.tearsofgaia.gem_water.usage_2=Fully repairs damaged items and removes curses. Increases levels of all enchantments.
+item.tearsofgaia.gem_fire.usage_2=Fire immunity bestowed upon player when needed, at a heavy cost of item durability (the item must be in hotbar or armor bar or in offhand slot or in baubles inventory).
+item.tearsofgaia.gem_air.usage_2=Acts as totem of undying when needed. Another gem may be imbued after totem activation (as if the item reverted to level 1). For the totem to activate, the item must be in hotbar or armor bar or in offhand slot or in baubles inventory.
+item.tearsofgaia.gem_earth.usage_2=Increases the level of Soulbound enchantment (item stays in inventory on player death; enchantment level decreased). Another gem may be imbued after Soulbound enchantment is used up (as if the item reverted to level 1).
+
+enchantment.soulbound_mf=Soulbound
+enchantment.soulbound_mf.description=Item with this enchantment stays in inventory on player's death. Enchantment level is decreased on death and enchantment disappears from item if it was on level one when player died. \n\nGaia's tears of earth variety can bestow this enchantment (multiple times if clumsy players need it).
+
+
+nebojsa=1 ne proveeravamo dist id u DD, 2 izvrnute linije; 3 gadmin ne edituje distr. 4 cdpr

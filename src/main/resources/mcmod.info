@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tearsofgaia",
+  "name": "Tears of Gaia",
+  "description": "Adds four gems that can be used on an anvil to strengthened your tools. The mod is intended to add some tool diversity by using what you have (gems are rare), not the same best set always.",
+  "version": "0.99",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MoonFather"],
+  "credits": "The Forge and FML guys, for making this relatively simple",
+  "logoFile": "logo/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

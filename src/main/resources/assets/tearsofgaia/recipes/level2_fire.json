@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#I#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "tearsofgaia:gem_fire"
+    },
+    "I": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "tearsofgaia:gem_fire_2",
+    "count": 1
+  },
+  "group": "modded",
+  "conditions":
+  [
+    {
+      "type": "tearsofgaia:level2"
+    }
+  ]
+}

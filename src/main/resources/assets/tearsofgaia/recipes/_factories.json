@@ -1,0 +1,6 @@
+{
+  "conditions":
+  {
+    "level2": "moonfather.tearsofgaia.items.LevelTwoRecipesConditionFactory"
+  }
+}
