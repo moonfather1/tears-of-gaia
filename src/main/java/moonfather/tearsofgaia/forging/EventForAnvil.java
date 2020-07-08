@@ -2,6 +2,7 @@ package moonfather.tearsofgaia.forging;
 
 import moonfather.tearsofgaia.Constants;
 import moonfather.tearsofgaia.ModTears;
+import moonfather.tearsofgaia.compatibility.TinkersConstructHelper;
 import moonfather.tearsofgaia.enchantments.EnchantmentSoulbound;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -57,6 +58,10 @@ public class EventForAnvil
 
 	private static boolean IsValidItemForLevel2(ItemStack stack, String gemElement)
 	{
+		if (TinkersConstructHelper.IsValidItemForLevel2(stack, gemElement))
+		{
+			return true;
+		}
 		if (stack.getItem() == Items.ENCHANTED_BOOK)
 		{
 			return false;
@@ -94,10 +99,11 @@ public class EventForAnvil
 
 	private static boolean IsValidItemForLevel1(ItemStack stack, String element)
 	{
-		//if (element=="earth")
-		//return true; /////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-		if (ElementalHelper.GetItemElement(stack) != null)
+		if (TinkersConstructHelper.IsValidItemForLevel1(stack, element))
+		{
+			return true;
+		}
+		else if (ElementalHelper.GetItemElement(stack) != null)
 		{
 			return false; // already imbued
 		}
@@ -171,7 +177,11 @@ public class EventForAnvil
 		output.setStackDisplayName(event.getName() != null && !event.getName().equals("") ? event.getName() : stack.getDisplayName());
 		output.setTagInfo(Constants.TAG_KEY_ELEMENT, new NBTTagString(element));
 		output.setTagInfo(Constants.TAG_KEY_LEVEL, new NBTTagInt(1));
-		if (element.equals("earth"))
+		if (TinkersConstructHelper.IsTinkersConstructItem(stack))
+		{
+			TinkersConstructHelper.ImbueItem(output, element);
+		}
+		else if (element.equals("earth"))
 		{
 			NBTTagList nbttaglist = output.getEnchantmentTagList();
 			int i = 0;
@@ -187,7 +197,6 @@ public class EventForAnvil
 				}
 				i += 1;
 			}
-			//TC:    NBTTagCompound extra = output.getTagCompound();              /////////////////////////////
 		}
 		else if (element.equals("water"))
 		{
@@ -229,7 +238,11 @@ public class EventForAnvil
 		output.setStackDisplayName(event.getName() != null && !event.getName().equals("") ? event.getName() : stack.getDisplayName());
 		output.setTagInfo(Constants.TAG_KEY_ELEMENT, new NBTTagString(element));
 		output.setTagInfo(Constants.TAG_KEY_LEVEL, new NBTTagInt(2));
-		if (element.equals("earth"))
+		if (TinkersConstructHelper.IsTinkersConstructItem(stack))
+		{
+			TinkersConstructHelper.ImbueItemToLevel2(output, element);
+		}
+		else if (element.equals("earth"))
 		{
 			output.setItemDamage((int) Math.floor(output.getItemDamage() * 0.75));
 
